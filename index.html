@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StudentHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>StudentHub</h1>
+    <p>Student Management System</p>
+</header>
+
+<div class="container">
+
+    <h2>Add Student Details</h2>
+
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="text" id="roll" placeholder="Roll Number" required>
+        <input type="text" id="department" placeholder="Department" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+
+        <button type="submit" id="submitBtn">Add Student</button>
+    </form>
+
+    <h2>Student Records</h2>
+
+    <input type="text" id="search" placeholder="Search students...">
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+
+    <p id="count">Total Students: 0</p>
+
+</div>
+
+<footer>
+    <p>© 2026 StudentHub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
